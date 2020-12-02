@@ -40,6 +40,7 @@ def pwd_checker_2(raw_df = None):
     # validate
     df['validate'] = df.apply(lambda x: True if (x.pwd[x.pos_1-1] + x.pwd[x.pos_2-1]).count(x.letter) == 1 else False , axis=1)
     return df['validate'].sum()
-    
+
 pwd_checker_2(raw_data)
+
 
