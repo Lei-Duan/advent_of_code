@@ -28,7 +28,7 @@ result = pd.DataFrame()
 for k,v in d.items():
     row_range = [0,127]
     col_range = [0,8]
-    for rows in v[0:7]:
+    for rows in v[0:7]:∏
         cut_half(row_range, t = rows)
     for cols in v[7:10]:
         cut_half(col_range, t = cols)
